@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
-import {
-  faFacebook,
-  faGithub,
-  faLinkedin,
-} from '@fortawesome/free-brands-svg-icons'
 import NavbarLinks from './NavbarLinks'
 import './Navbar.css'
+import SocialIcons from './SocialIcons'
 
 const Navbar = () => {
   const [translate, setTranslate] = useState('-translate-x-full')
@@ -43,12 +39,14 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`h-20 p-4 grid items-center transition-all md:bg-orange-100 ${fixedNavbar}`}
+        className={`h-20 p-4 grid items-center transition duration-300 ease-linear md:bg-orange-100 ${fixedNavbar}`}
       >
         <div className='container mx-auto md:grid md:grid-cols-2 md:items-center'>
           {/* Nav Header */}
           <div className='grid grid-cols-2 items-center'>
-            <h1 className='text-xl font-bold'>Tushar Pramanik</h1>
+            <h1 className='text-xl font-bold tracking-widest leading-5'>
+              Tushar Pramanik
+            </h1>
             <button
               onClick={barButtonClickHandler}
               className='bg-transparent border-transparent text-yellow-500 text-3xl cursor-pointer justify-self-end mr-2 md:hidden transition duration-300 ease-linear hover:text-yellow-400'
@@ -85,30 +83,7 @@ const Navbar = () => {
           </ul>
           {/* Social Icons */}
           <ul className='grid grid-cols-3 justify-items-center mt-12 w-80'>
-            <li>
-              <a
-                href='https://www.twitter.com'
-                className='text-2xl transition duration-300 ease-linear hover:text-yellow-500'
-              >
-                <FontAwesomeIcon icon={faFacebook} />
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://www.twitter.com'
-                className='text-2xl transition duration-300 ease-linear hover:text-yellow-500'
-              >
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://www.twitter.com'
-                className='text-2xl transition duration-300 ease-linear hover:text-yellow-500'
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-            </li>
+            <SocialIcons />
           </ul>
         </div>
       </aside>
