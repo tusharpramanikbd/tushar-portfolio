@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import {
@@ -7,9 +7,27 @@ import {
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
 import NavbarLinks from './NavbarLinks'
+import './Navbar.css'
 
 const Navbar = () => {
   const [translate, setTranslate] = useState('-translate-x-full')
+  const [fixedNavbar, setFixedNavbar] = useState('')
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.pageYOffset > 80) {
+        setFixedNavbar('navbar-fixed')
+      } else {
+        setFixedNavbar('')
+      }
+    }
+
+    window.addEventListener('scroll', onScroll)
+
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+    }
+  }, [])
 
   const barButtonClickHandler = () => {
     if (translate === '-translate-x-full') {
@@ -24,7 +42,9 @@ const Navbar = () => {
   }
   return (
     <>
-      <nav className='h-20 p-4 grid items-center transition-all md:bg-orange-100'>
+      <nav
+        className={`h-20 p-4 grid items-center transition-all md:bg-orange-100 ${fixedNavbar}`}
+      >
         <div className='container mx-auto md:grid md:grid-cols-2 md:items-center'>
           {/* Nav Header */}
           <div className='grid grid-cols-2 items-center'>
