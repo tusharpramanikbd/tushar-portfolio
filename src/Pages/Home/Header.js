@@ -7,13 +7,13 @@ import Button from '../Shared/Button'
 const Header = () => {
   return (
     <header className='bg-orange-100'>
-      <div className='container mx-auto min-h-[calc(100vh-5rem)] grid place-items-center'>
+      <div className='container mx-auto min-h-[calc(100vh-5rem)] grid place-items-center md:grid-cols-2'>
         <article>
           <Underline marginleft='ml-0' marginbottom='mb-2' />
-          <h1 className='capitalize tracking-widest leading-5 text-3xl font-bold mt-4'>
+          <h1 className='capitalize tracking-widest leading-5 text-3xl md:text-5xl font-bold mt-4'>
             i'm tushar
           </h1>
-          <h1 className='capitalize tracking-widest leading-5 mt-4 font-bold text-gray-500'>
+          <h1 className='capitalize tracking-widest leading-5 mt-4 font-bold text-gray-500 md:text-xl'>
             MERN stack developer
           </h1>
           <Button text='Hire Me' />
@@ -21,8 +21,12 @@ const Header = () => {
             <SocialIcons />
           </ul>
         </article>
-        <article className='hidden'>
-          <img src={profileImage} alt='Tushar Pramanik' />
+        <article className='hidden md:block relative before:absolute before:border-4 before:rounded-lg before:border-solid before:border-yellow-500 before:top-7 before:left-7 before:w-full before:h-full'>
+          <img
+            className='max-w-sm max-h-[30rem] object-cover rounded-lg relative'
+            src={profileImage}
+            alt='Tushar Pramanik'
+          />
         </article>
       </div>
     </header>
