@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Shared/Navbar'
+import AboutSection from './AboutSection'
 import Header from './Header'
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <div>
       <Navbar />
       <Header />
+      <AboutSection />
     </div>
   )
 }
