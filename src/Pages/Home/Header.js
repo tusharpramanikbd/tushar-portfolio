@@ -21,7 +21,7 @@ const Header = () => {
             <SocialIcons />
           </ul>
         </article>
-        <article className='hidden md:block relative before:absolute before:border-4 before:rounded-lg before:border-solid before:border-yellow-500 before:top-7 before:left-7 before:w-full before:h-full'>
+        <article className='hidden md:block relative lg:before:absolute lg:before:border-4 lg:before:rounded-lg lg:before:border-solid lg:before:border-yellow-500 lg:before:top-7 lg:before:left-7 lg:before:w-full lg:before:h-full'>
           <img
             className='max-w-sm max-h-[30rem] object-cover rounded-lg relative'
             src={profileImage}
