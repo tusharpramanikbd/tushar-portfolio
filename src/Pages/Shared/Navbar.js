@@ -45,7 +45,7 @@ const Navbar = () => {
           {/* Nav Header */}
           <div className='grid grid-cols-2 items-center'>
             <h1 className='text-xl font-bold tracking-widest leading-5'>
-              Tushar Pramanik
+              Tushar <span className='text-yellow-500'>Pramanik</span>
             </h1>
             <button
               onClick={barButtonClickHandler}

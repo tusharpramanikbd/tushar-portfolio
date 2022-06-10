@@ -21,9 +21,7 @@ const ServiceSection = () => {
           <h4 className='text-xl font-bold capitalize'>web development</h4>
           <div className='underline'></div>
           <p className='text-gray-500'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
-            rem odio harum eveniet impedit laudantium id fuga ex repellendus.
-            Consectetur.
+            I can develop modern website using React.JS.
           </p>
         </article>
 
@@ -32,9 +30,8 @@ const ServiceSection = () => {
           <h4 className='text-xl font-bold capitalize'>web design</h4>
           <div className='underline'></div>
           <p className='text-gray-500'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
-            rem odio harum eveniet impedit laudantium id fuga ex repellendus.
-            Consectetur.
+            I can design modern website with HTML5, CSS3, Bootstrap, Tailwind,
+            etc.
           </p>
         </article>
 
@@ -43,9 +40,7 @@ const ServiceSection = () => {
           <h4 className='text-xl font-bold capitalize'>app development</h4>
           <div className='underline'></div>
           <p className='text-gray-500'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
-            rem odio harum eveniet impedit laudantium id fuga ex repellendus.
-            Consectetur.
+            I can develop modern mobile application with React Native.
           </p>
         </article>
       </div>
