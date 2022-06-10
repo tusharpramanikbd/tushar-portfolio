@@ -16,7 +16,7 @@ const Contact = () => {
   }
 
   return (
-    <section className='py-20'>
+    <section className='py-20 bg-gray-100'>
       <div className='w-full mx-auto'>
         <div>
           <h2 className='text-2xl font-bold tracking-widest capitalize text-center'>

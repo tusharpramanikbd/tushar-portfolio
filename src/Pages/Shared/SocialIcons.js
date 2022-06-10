@@ -6,13 +6,13 @@ import {
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
 
-const SocialIcons = () => {
+const SocialIcons = ({ textColor }) => {
   return (
     <>
       <li>
         <a
           href='https://www.twitter.com'
-          className='text-2xl transition duration-300 ease-linear hover:text-yellow-500'
+          className={`text-2xl transition duration-300 ease-linear hover:text-yellow-500 ${textColor}`}
         >
           <FontAwesomeIcon icon={faFacebook} />
         </a>
@@ -20,7 +20,7 @@ const SocialIcons = () => {
       <li>
         <a
           href='https://www.twitter.com'
-          className='text-2xl transition duration-300 ease-linear hover:text-yellow-500'
+          className={`text-2xl transition duration-300 ease-linear hover:text-yellow-500 ${textColor}`}
         >
           <FontAwesomeIcon icon={faGithub} />
         </a>
@@ -28,7 +28,7 @@ const SocialIcons = () => {
       <li>
         <a
           href='https://www.twitter.com'
-          className='text-2xl transition duration-300 ease-linear hover:text-yellow-500'
+          className={`text-2xl transition duration-300 ease-linear hover:text-yellow-500 ${textColor}`}
         >
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
