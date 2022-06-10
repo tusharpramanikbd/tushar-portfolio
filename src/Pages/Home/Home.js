@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Shared/Navbar'
 import AboutSection from './AboutSection'
+import Blogs from './Blogs'
 import Contact from './Contact'
 import Footer from './Footer'
 import Header from './Header'
@@ -17,6 +18,7 @@ const Home = () => {
       <ServiceSection />
       <ProjectSection />
       <Skills />
+      <Blogs />
       <Contact />
       <Footer />
     </div>

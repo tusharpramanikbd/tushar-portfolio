@@ -58,6 +58,15 @@ const NavbarLinks = ({
         <a
           onClick={crossButtonClickHandler}
           className={`hover:text-yellow-500 transition duration-300 ease-linear text-sm ${textSize} ${display} ${marginBottom} ${spacing}`}
+          href='#blogs'
+        >
+          blogs
+        </a>
+      </li>
+      <li>
+        <a
+          onClick={crossButtonClickHandler}
+          className={`hover:text-yellow-500 transition duration-300 ease-linear text-sm ${textSize} ${display} ${marginBottom} ${spacing}`}
           href='#contact'
         >
           contact
