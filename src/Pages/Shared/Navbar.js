@@ -41,7 +41,7 @@ const Navbar = () => {
       <nav
         className={`h-20 p-4 grid items-center transition duration-300 ease-linear md:bg-orange-100 ${fixedNavbar}`}
       >
-        <div className='container mx-auto md:grid md:grid-cols-2 md:items-center'>
+        <div className='container mx-auto md:grid md:grid-cols-auto md:items-center'>
           {/* Nav Header */}
           <div className='grid grid-cols-2 items-center'>
             <h1 className='text-xl font-bold tracking-widest leading-5'>
@@ -55,7 +55,7 @@ const Navbar = () => {
             </button>
           </div>
           {/* Nav Links */}
-          <ul className='hidden capitalize md:grid md:grid-cols-6 md:justify-items-center md:gap-x-4 text-gray-800 font-bold tracking-[.25rem]'>
+          <ul className='hidden capitalize md:grid md:grid-cols-7 md:items-center md:justify-items-center md:gap-x-4 text-gray-800 font-bold tracking-[.25rem]'>
             <NavbarLinks />
           </ul>
         </div>

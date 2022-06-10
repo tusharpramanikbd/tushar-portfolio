@@ -51,6 +51,15 @@ const NavbarLinks = ({ textSize, display, marginBottom, spacing }) => {
           contact
         </a>
       </li>
+      <li>
+        <a
+          href='https://drive.google.com/file/d/1dQkuIwdOVuUuv_8E37_jQrFeQCU8JM2c/view?usp=sharing'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <button class='btn btn-outline'>Download Resume</button>
+        </a>
+      </li>
     </>
   )
 }
