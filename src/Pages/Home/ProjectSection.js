@@ -14,11 +14,11 @@ const ProjectSection = () => {
         <Underline margintop='mt-2' />
       </div>
 
-      <div class='container mx-auto md:grid md:grid-cols-2 md:gap-8 lg:grid-cols-3'>
-        <article class='relative bg-yellow-200 rounded-md mb-4 p-4 flex flex-col gap-y-4'>
+      <div className='container mx-auto md:grid md:grid-cols-2 md:gap-8 lg:grid-cols-3'>
+        <article className='relative bg-yellow-200 rounded-md mb-4 md:mb-0 p-4 flex flex-col gap-y-4'>
           <div>
-            <img src={img1} alt='single project' class='project-img' />
-            <div class='project-info'>
+            <img src={img1} alt='single project' className='project-img' />
+            <div className='project-info'>
               <h4 className='text-center mt-2 text-xl font-bold'>
                 Bikerz Heaven
               </h4>
@@ -63,10 +63,10 @@ const ProjectSection = () => {
           </div>
         </article>
 
-        <article class='relative bg-yellow-200 rounded-md mb-4 p-4 flex flex-col gap-y-4'>
+        <article className='relative bg-yellow-200 rounded-md mb-4 md:mb-0 p-4 flex flex-col gap-y-4'>
           <div>
-            <img src={img2} alt='single project' class='project-img' />
-            <div class='project-info'>
+            <img src={img2} alt='single project' className='project-img' />
+            <div className='project-info'>
               <h4 className='text-center mt-2 text-xl font-bold'>Fruit Mama</h4>
               <p className='mt-2'>
                 <span className='font-bold'>Description:</span> This is a fruit
@@ -110,10 +110,10 @@ const ProjectSection = () => {
           </div>
         </article>
 
-        <article class='relative bg-yellow-200 rounded-md mb-4 p-4 flex flex-col gap-y-4'>
+        <article className='relative bg-yellow-200 rounded-md mb-4 md:mb-0 p-4 flex flex-col gap-y-4'>
           <div>
-            <img src={img3} alt='single project' class='project-img' />
-            <div class='project-info'>
+            <img src={img3} alt='single project' className='project-img' />
+            <div className='project-info'>
               <h4 className='text-center mt-2 text-xl font-bold'>
                 Doctor Smile
               </h4>

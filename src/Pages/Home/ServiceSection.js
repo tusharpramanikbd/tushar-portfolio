@@ -19,7 +19,7 @@ const ServiceSection = () => {
         <article className='bg-white py-12 px-6 mb-8 md:mb-0 rounded-md text-center transition duration-300 ease-linear shadow-lg service'>
           <FontAwesomeIcon className='text-4xl mb-6' icon={faCodepen} />
           <h4 className='text-xl font-bold capitalize'>web development</h4>
-          <div class='underline'></div>
+          <div className='underline'></div>
           <p className='text-gray-500'>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
             rem odio harum eveniet impedit laudantium id fuga ex repellendus.
@@ -30,7 +30,7 @@ const ServiceSection = () => {
         <article className='bg-white py-12 px-6 mb-8 md:mb-0 rounded-md text-center transition duration-300 ease-linear shadow-lg service'>
           <FontAwesomeIcon className='text-4xl mb-6' icon={faSketch} />
           <h4 className='text-xl font-bold capitalize'>web design</h4>
-          <div class='underline'></div>
+          <div className='underline'></div>
           <p className='text-gray-500'>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
             rem odio harum eveniet impedit laudantium id fuga ex repellendus.
@@ -41,7 +41,7 @@ const ServiceSection = () => {
         <article className='bg-white py-12 px-6 mb-8 md:mb-0 rounded-md text-center transition duration-300 ease-linear shadow-lg service'>
           <FontAwesomeIcon className='text-4xl mb-6' icon={faAndroid} />
           <h4 className='text-xl font-bold capitalize'>app development</h4>
-          <div class='underline'></div>
+          <div className='underline'></div>
           <p className='text-gray-500'>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
             rem odio harum eveniet impedit laudantium id fuga ex repellendus.
