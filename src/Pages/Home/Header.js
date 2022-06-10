@@ -6,7 +6,7 @@ import Button from '../Shared/Button'
 
 const Header = () => {
   return (
-    <header className='bg-orange-100'>
+    <header id='header' className='bg-orange-100'>
       <div className='container mx-auto min-h-[calc(100vh-5rem)] grid place-items-center md:grid-cols-2'>
         <article>
           <Underline marginleft='ml-0' marginbottom='mb-2' />

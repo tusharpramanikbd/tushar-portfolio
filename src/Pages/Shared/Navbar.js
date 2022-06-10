@@ -55,7 +55,7 @@ const Navbar = () => {
             </button>
           </div>
           {/* Nav Links */}
-          <ul className='hidden capitalize md:grid md:grid-cols-4 md:justify-items-center md:gap-x-4 text-gray-800 font-bold tracking-[.25rem]'>
+          <ul className='hidden capitalize md:grid md:grid-cols-6 md:justify-items-center md:gap-x-4 text-gray-800 font-bold tracking-[.25rem]'>
             <NavbarLinks />
           </ul>
         </div>

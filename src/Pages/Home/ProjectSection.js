@@ -6,7 +6,7 @@ import img3 from '../../Images/doctor-smile.JPG'
 
 const ProjectSection = () => {
   return (
-    <section className='py-20'>
+    <section id='projects' className='py-20'>
       <div>
         <h2 className='text-2xl font-bold tracking-widest capitalize text-center'>
           latest works

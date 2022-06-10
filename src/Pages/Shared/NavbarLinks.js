@@ -6,7 +6,7 @@ const NavbarLinks = ({ textSize, display, marginBottom, spacing }) => {
       <li>
         <a
           className={`hover:text-yellow-500 transition duration-300 ease-linear ${textSize} ${display} ${marginBottom} ${spacing}`}
-          href='index.html'
+          href='#header'
         >
           home
         </a>
@@ -14,7 +14,7 @@ const NavbarLinks = ({ textSize, display, marginBottom, spacing }) => {
       <li>
         <a
           className={`hover:text-yellow-500 transition duration-300 ease-linear ${textSize} ${display} ${marginBottom} ${spacing}`}
-          href='about.html'
+          href='#about'
         >
           about
         </a>
@@ -22,7 +22,15 @@ const NavbarLinks = ({ textSize, display, marginBottom, spacing }) => {
       <li>
         <a
           className={`hover:text-yellow-500 transition duration-300 ease-linear ${textSize} ${display} ${marginBottom} ${spacing}`}
-          href='projects.html'
+          href='#services'
+        >
+          services
+        </a>
+      </li>
+      <li>
+        <a
+          className={`hover:text-yellow-500 transition duration-300 ease-linear ${textSize} ${display} ${marginBottom} ${spacing}`}
+          href='#projects'
         >
           projects
         </a>
@@ -30,7 +38,15 @@ const NavbarLinks = ({ textSize, display, marginBottom, spacing }) => {
       <li>
         <a
           className={`hover:text-yellow-500 transition duration-300 ease-linear ${textSize} ${display} ${marginBottom} ${spacing}`}
-          href='contact.html'
+          href='#skills'
+        >
+          skills
+        </a>
+      </li>
+      <li>
+        <a
+          className={`hover:text-yellow-500 transition duration-300 ease-linear ${textSize} ${display} ${marginBottom} ${spacing}`}
+          href='#contact'
         >
           contact
         </a>

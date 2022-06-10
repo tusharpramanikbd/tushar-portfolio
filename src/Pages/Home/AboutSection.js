@@ -5,7 +5,7 @@ import aboutImg from '../../Images/2.jpg'
 
 const AboutSection = () => {
   return (
-    <section className='py-20'>
+    <section id='about' className='py-20'>
       <div className='container mx-auto grid md:grid-cols-2 md:items-center gap-y-12 gap-x-8 px-8 md:px-0'>
         <article className='justify-self-center relative lg:before:absolute lg:before:border-4 lg:before:rounded-lg lg:before:border-solid lg:before:border-yellow-500 lg:before:top-7 lg:before:right-7 lg:before:w-full lg:before:h-full'>
           <img

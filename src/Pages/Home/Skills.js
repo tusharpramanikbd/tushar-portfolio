@@ -3,7 +3,7 @@ import Underline from '../Shared/Underline'
 
 const Skills = () => {
   return (
-    <section className='py-20 bg-[#FCEEC5]'>
+    <section id='skills' className='py-20 bg-[#FCEEC5]'>
       <div className='mx-auto md:w-9/12 lg:w-6/12'>
         <div>
           <h2 className='text-2xl font-bold tracking-widest capitalize text-center'>

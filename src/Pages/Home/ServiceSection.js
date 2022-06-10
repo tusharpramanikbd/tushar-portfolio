@@ -10,7 +10,7 @@ import './ServiceSection.css'
 
 const ServiceSection = () => {
   return (
-    <section className='py-20 bg-gray-100'>
+    <section id='services' className='py-20 bg-gray-100'>
       <div className='text-2xl font-bold tracking-widest capitalize text-center'>
         <h2>services</h2>
         <Underline margintop='mt-2' />
