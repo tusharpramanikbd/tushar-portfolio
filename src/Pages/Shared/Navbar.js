@@ -41,21 +41,21 @@ const Navbar = () => {
       <nav
         className={`h-20 p-4 grid items-center transition duration-300 ease-linear md:bg-orange-100 ${fixedNavbar}`}
       >
-        <div className='container mx-auto md:grid md:grid-cols-auto md:items-center'>
+        <div className='container mx-auto lg:grid lg:grid-cols-auto lg:items-center'>
           {/* Nav Header */}
-          <div className='grid grid-cols-2 items-center'>
+          <div className='grid grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 items-center'>
             <h1 className='text-xl font-bold tracking-widest leading-5'>
               Tushar <span className='text-yellow-500'>Pramanik</span>
             </h1>
             <button
               onClick={barButtonClickHandler}
-              className='bg-transparent border-transparent text-yellow-500 text-3xl cursor-pointer justify-self-end mr-2 md:hidden transition duration-300 ease-linear hover:text-yellow-400'
+              className='bg-transparent border-transparent text-yellow-500 text-3xl cursor-pointer justify-self-end mr-2 lg:hidden transition duration-300 ease-linear hover:text-yellow-400'
             >
               <FontAwesomeIcon icon={faBars} />
             </button>
           </div>
           {/* Nav Links */}
-          <ul className='hidden capitalize md:grid md:grid-cols-7 md:items-center md:justify-items-center md:gap-x-4 text-gray-800 font-bold tracking-[.25rem]'>
+          <ul className='hidden capitalize lg:flex lg:items-center lg:justify-end lg:gap-x-4 text-gray-800 font-bold tracking-[.25rem]'>
             <NavbarLinks />
           </ul>
         </div>
@@ -79,6 +79,7 @@ const Navbar = () => {
               display='inline-block'
               marginBottom='mb-6'
               spacing='tracking-widest'
+              crossButtonClickHandler={crossButtonClickHandler}
             />
           </ul>
           {/* Social Icons */}

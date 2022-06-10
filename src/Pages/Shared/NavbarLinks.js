@@ -1,11 +1,18 @@
 import React from 'react'
 
-const NavbarLinks = ({ textSize, display, marginBottom, spacing }) => {
+const NavbarLinks = ({
+  textSize,
+  display,
+  marginBottom,
+  spacing,
+  crossButtonClickHandler,
+}) => {
   return (
     <>
       <li>
         <a
-          className={`hover:text-yellow-500 transition duration-300 ease-linear ${textSize} ${display} ${marginBottom} ${spacing}`}
+          onClick={crossButtonClickHandler}
+          className={`hover:text-yellow-500 transition duration-300 ease-linear text-sm ${textSize} ${display} ${marginBottom} ${spacing}`}
           href='#header'
         >
           home
@@ -13,7 +20,8 @@ const NavbarLinks = ({ textSize, display, marginBottom, spacing }) => {
       </li>
       <li>
         <a
-          className={`hover:text-yellow-500 transition duration-300 ease-linear ${textSize} ${display} ${marginBottom} ${spacing}`}
+          onClick={crossButtonClickHandler}
+          className={`hover:text-yellow-500 transition duration-300 ease-linear text-sm ${textSize} ${display} ${marginBottom} ${spacing}`}
           href='#about'
         >
           about
@@ -21,7 +29,8 @@ const NavbarLinks = ({ textSize, display, marginBottom, spacing }) => {
       </li>
       <li>
         <a
-          className={`hover:text-yellow-500 transition duration-300 ease-linear ${textSize} ${display} ${marginBottom} ${spacing}`}
+          onClick={crossButtonClickHandler}
+          className={`hover:text-yellow-500 transition duration-300 ease-linear text-sm ${textSize} ${display} ${marginBottom} ${spacing}`}
           href='#services'
         >
           services
@@ -29,7 +38,8 @@ const NavbarLinks = ({ textSize, display, marginBottom, spacing }) => {
       </li>
       <li>
         <a
-          className={`hover:text-yellow-500 transition duration-300 ease-linear ${textSize} ${display} ${marginBottom} ${spacing}`}
+          onClick={crossButtonClickHandler}
+          className={`hover:text-yellow-500 transition duration-300 ease-linear text-sm ${textSize} ${display} ${marginBottom} ${spacing}`}
           href='#projects'
         >
           projects
@@ -37,7 +47,8 @@ const NavbarLinks = ({ textSize, display, marginBottom, spacing }) => {
       </li>
       <li>
         <a
-          className={`hover:text-yellow-500 transition duration-300 ease-linear ${textSize} ${display} ${marginBottom} ${spacing}`}
+          onClick={crossButtonClickHandler}
+          className={`hover:text-yellow-500 transition duration-300 ease-linear text-sm ${textSize} ${display} ${marginBottom} ${spacing}`}
           href='#skills'
         >
           skills
@@ -45,7 +56,8 @@ const NavbarLinks = ({ textSize, display, marginBottom, spacing }) => {
       </li>
       <li>
         <a
-          className={`hover:text-yellow-500 transition duration-300 ease-linear ${textSize} ${display} ${marginBottom} ${spacing}`}
+          onClick={crossButtonClickHandler}
+          className={`hover:text-yellow-500 transition duration-300 ease-linear text-sm ${textSize} ${display} ${marginBottom} ${spacing}`}
           href='#contact'
         >
           contact
@@ -53,11 +65,12 @@ const NavbarLinks = ({ textSize, display, marginBottom, spacing }) => {
       </li>
       <li>
         <a
+          onClick={crossButtonClickHandler}
           href='https://drive.google.com/file/d/1dQkuIwdOVuUuv_8E37_jQrFeQCU8JM2c/view?usp=sharing'
           target='_blank'
           rel='noreferrer'
         >
-          <button class='btn btn-outline'>Download Resume</button>
+          <button className='btn btn-outline text-sm'>Download Resume</button>
         </a>
       </li>
     </>

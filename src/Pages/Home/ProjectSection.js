@@ -15,7 +15,7 @@ const ProjectSection = () => {
       </div>
 
       <div className='container mx-auto md:grid md:grid-cols-2 md:gap-8 lg:grid-cols-3'>
-        <article className='relative bg-yellow-200 rounded-md mb-4 md:mb-0 p-4 flex flex-col gap-y-4'>
+        <article className='relative bg-[#FCEEC5] rounded-md mb-4 md:mb-0 p-4 flex flex-col gap-y-4'>
           <div>
             <img src={img1} alt='single project' className='project-img' />
             <div className='project-info'>
@@ -28,11 +28,11 @@ const ProjectSection = () => {
                 can be used to purchase the bike parts with stripe in bulk
                 quantity. User can add review as well as delete order.
               </p>
-              <h1>
-                <span className='font-bold mt-2'>Technology Used:</span>{' '}
-                ReactJS, HTML5, CSS3, Tailwind, DaisyUI, Google Firebase, React
-                Firebase Hooks, React Toastify, React Router, Fontawesome, React
-                Hook Form, Recharts, React Query, Stripe, Axios
+              <h1 className='mt-2'>
+                <span className='font-bold'>Technology Used:</span> ReactJS,
+                HTML5, CSS3, Tailwind, DaisyUI, Google Firebase, React Firebase
+                Hooks, React Toastify, React Router, Fontawesome, React Hook
+                Form, Recharts, React Query, Stripe, Axios
               </h1>
             </div>
           </div>
@@ -42,7 +42,7 @@ const ProjectSection = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <button class='btn btn-outline'>Live Link</button>
+              <button className='btn btn-sm btn-outline'>Live Link</button>
             </a>
             <a
               className='justify-self-center'
@@ -50,7 +50,7 @@ const ProjectSection = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <button class='btn btn-outline'>Client Code</button>
+              <button className='btn btn-sm btn-outline'>Client Code</button>
             </a>
             <a
               className='justify-self-end'
@@ -58,12 +58,12 @@ const ProjectSection = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <button class='btn btn-outline'>Server Code</button>
+              <button className='btn btn-sm btn-outline'>Server Code</button>
             </a>
           </div>
         </article>
 
-        <article className='relative bg-yellow-200 rounded-md mb-4 md:mb-0 p-4 flex flex-col gap-y-4'>
+        <article className='relative bg-[#FCEEC5] rounded-md mb-4 md:mb-0 p-4 flex flex-col gap-y-4'>
           <div>
             <img src={img2} alt='single project' className='project-img' />
             <div className='project-info'>
@@ -75,11 +75,11 @@ const ProjectSection = () => {
                 suppliers can also contact the website owner with the contact us
                 section.
               </p>
-              <h1>
-                <span className='font-bold mt-2'>Technology Used:</span>{' '}
-                ReactJS, HTML5, CSS3, React Bootstrap, Google Firebase, React
-                Firebase Hooks, React Toastify, React Router, Fontawesome, React
-                Hook Form, Recharts, React Query, React Helmet Async
+              <h1 className='mt-2'>
+                <span className='font-bold'>Technology Used:</span> ReactJS,
+                HTML5, CSS3, React Bootstrap, Google Firebase, React Firebase
+                Hooks, React Toastify, React Router, Fontawesome, React Hook
+                Form, Recharts, React Query, React Helmet Async
               </h1>
             </div>
           </div>
@@ -89,7 +89,7 @@ const ProjectSection = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <button class='btn btn-outline'>Live Link</button>
+              <button className='btn btn-sm btn-outline'>Live Link</button>
             </a>
             <a
               className='justify-self-center'
@@ -97,7 +97,7 @@ const ProjectSection = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <button class='btn btn-outline'>Client Code</button>
+              <button className='btn btn-sm btn-outline'>Client Code</button>
             </a>
             <a
               className='justify-self-end'
@@ -105,12 +105,12 @@ const ProjectSection = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <button class='btn btn-outline'>Server Code</button>
+              <button className='btn btn-sm btn-outline'>Server Code</button>
             </a>
           </div>
         </article>
 
-        <article className='relative bg-yellow-200 rounded-md mb-4 md:mb-0 p-4 flex flex-col gap-y-4'>
+        <article className='relative bg-[#FCEEC5] rounded-md mb-4 md:mb-0 p-4 flex flex-col gap-y-4'>
           <div>
             <img src={img3} alt='single project' className='project-img' />
             <div className='project-info'>
@@ -124,10 +124,10 @@ const ProjectSection = () => {
                 else you can signin with google. You can login with your email
                 and password.
               </p>
-              <h1>
-                <span className='font-bold mt-2'>Technology Used:</span>{' '}
-                ReactJS, HTML5, CSS3,React Bootstrap, Google Firebase, React
-                Firebase Hooks, React Toastify, React Router.
+              <h1 className='mt-2'>
+                <span className='font-bold'>Technology Used:</span> ReactJS,
+                HTML5, CSS3,React Bootstrap, Google Firebase, React Firebase
+                Hooks, React Toastify, React Router.
               </h1>
             </div>
           </div>
@@ -137,7 +137,7 @@ const ProjectSection = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <button class='btn btn-outline'>Live Link</button>
+              <button className='btn btn-sm btn-outline'>Live Link</button>
             </a>
             <a
               className='justify-self-end'
@@ -145,7 +145,7 @@ const ProjectSection = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <button class='btn btn-outline'>Client Code</button>
+              <button className='btn btn-sm btn-outline'>Client Code</button>
             </a>
           </div>
         </article>

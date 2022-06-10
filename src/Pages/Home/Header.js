@@ -17,7 +17,7 @@ const Header = () => {
             MERN stack developer
           </h1>
           <Button text='Hire Me' />
-          <ul className='grid grid-cols-3 justify-items-start mt-8 gap-[-2.75rem]'>
+          <ul className='flex justify-items-start mt-8 gap-x-8'>
             <SocialIcons />
           </ul>
         </article>

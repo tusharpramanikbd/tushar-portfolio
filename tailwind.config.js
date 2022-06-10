@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        auto: '500px 1fr',
+        auto: 'auto 1fr',
       },
     },
   },

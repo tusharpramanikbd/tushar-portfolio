@@ -1,18 +1,31 @@
-import React from 'react'
-import { useForm } from 'react-hook-form'
+import React, { useRef } from 'react'
 import Underline from '../Shared/Underline'
+import emailjs from '@emailjs/browser'
+import { toast } from 'react-toastify'
 
 const Contact = () => {
-  const {
-    register,
-    formState: { errors },
-    handleSubmit,
-    reset,
-  } = useForm()
+  const form = useRef()
 
-  const onSubmit = async (data) => {
-    console.log(data)
-    reset()
+  const onSubmit = (e) => {
+    e.preventDefault()
+    emailjs
+      .sendForm(
+        'service_jprmxmk',
+        'template_hchg1q5',
+        form.current,
+        'tShebNNT3fepDy5CH'
+      )
+      .then(
+        (result) => {
+          toast.success('Your email is received')
+          console.log(result.text)
+          form.current.reset()
+        },
+        (error) => {
+          toast.error('Error: Please try again')
+          console.log(error.text)
+        }
+      )
   }
 
   return (
@@ -25,8 +38,9 @@ const Contact = () => {
           <Underline margintop='mt-2' />
         </div>
         <form
+          ref={form}
           className='mt-4 rounded-lg drop-shadow-lg bg-white w-11/12 md:w-9/12 lg:w-6/12 p-4 md:p-8 mx-auto'
-          onSubmit={handleSubmit(onSubmit)}
+          onSubmit={onSubmit}
         >
           <div className='form-control w-full'>
             <label className='label'>
@@ -34,22 +48,11 @@ const Contact = () => {
             </label>
             <input
               type='text'
+              name='fullName'
               placeholder='Your full name'
               className='input input-bordered w-full'
-              {...register('fullName', {
-                required: {
-                  value: true,
-                  message: 'Full Name is required',
-                },
-              })}
+              required
             />
-            <label className='label'>
-              {errors.fullName?.type === 'required' && (
-                <span className='label-text-alt text-red-500'>
-                  {errors.fullName.message}
-                </span>
-              )}
-            </label>
           </div>
 
           <div className='form-control w-full'>
@@ -58,22 +61,11 @@ const Contact = () => {
             </label>
             <input
               type='email'
+              name='email'
               placeholder='Your email address'
               className='input input-bordered w-full'
-              {...register('email', {
-                required: {
-                  value: true,
-                  message: 'Email is required',
-                },
-              })}
+              required
             />
-            <label className='label'>
-              {errors.email?.type === 'required' && (
-                <span className='label-text-alt text-red-500'>
-                  {errors.email.message}
-                </span>
-              )}
-            </label>
           </div>
 
           <div className='form-control'>
@@ -83,26 +75,15 @@ const Contact = () => {
             <textarea
               className='textarea textarea-bordered h-24'
               placeholder='Your Message'
-              {...register('message', {
-                required: {
-                  value: true,
-                  message: 'Message is required',
-                },
-              })}
+              name='message'
+              required
             ></textarea>
-            <label className='label'>
-              {errors.message?.type === 'required' && (
-                <span className='label-text-alt text-red-500'>
-                  {errors.message.message}
-                </span>
-              )}
-            </label>
           </div>
 
           <input
-            className='btn btn-primary w-full'
+            className='btn btn-primary w-full mt-4'
             type='submit'
-            value='Submit'
+            value='Send'
           />
         </form>
       </div>

@@ -8,7 +8,7 @@ const Footer = () => {
       <ul className='grid grid-cols-3 justify-items-start mt-8 gap-8 mb-6'>
         <SocialIcons textColor='text-yellow-300' />
       </ul>
-      <p className='text-gray-500 text-xl capitalize'>
+      <p className='text-gray-500 text-sm md:text-xl capitalize'>
         &copy; <span>{currentYear}</span> Tushar Pramanik. all right reserved
       </p>
     </footer>
