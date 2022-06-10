@@ -11,7 +11,9 @@ const SocialIcons = ({ textColor }) => {
     <>
       <li>
         <a
-          href='https://www.twitter.com'
+          href='https://www.facebook.com/tusharpramanik93'
+          target='_blank'
+          rel='noreferrer'
           className={`text-2xl transition duration-300 ease-linear hover:text-yellow-500 ${textColor}`}
         >
           <FontAwesomeIcon icon={faFacebook} />
@@ -19,7 +21,9 @@ const SocialIcons = ({ textColor }) => {
       </li>
       <li>
         <a
-          href='https://www.twitter.com'
+          href='https://github.com/tusharpramanikbd'
+          target='_blank'
+          rel='noreferrer'
           className={`text-2xl transition duration-300 ease-linear hover:text-yellow-500 ${textColor}`}
         >
           <FontAwesomeIcon icon={faGithub} />
@@ -27,7 +31,9 @@ const SocialIcons = ({ textColor }) => {
       </li>
       <li>
         <a
-          href='https://www.twitter.com'
+          href='https://www.linkedin.com/in/tushar-pramanik/'
+          target='_blank'
+          rel='noreferrer'
           className={`text-2xl transition duration-300 ease-linear hover:text-yellow-500 ${textColor}`}
         >
           <FontAwesomeIcon icon={faLinkedin} />

@@ -36,13 +36,13 @@ const ProjectSection = () => {
               </h1>
             </div>
           </div>
-          <div className='grid grid-cols-3 items-center justify-between mt-auto font-bold'>
+          <div className='flex items-center justify-between mt-auto font-bold'>
             <a
               href='https://bikerz-heaven.web.app/'
               target='_blank'
               rel='noreferrer'
             >
-              Live Link
+              <button class='btn btn-outline'>Live Link</button>
             </a>
             <a
               className='justify-self-center'
@@ -50,7 +50,7 @@ const ProjectSection = () => {
               target='_blank'
               rel='noreferrer'
             >
-              Client Code
+              <button class='btn btn-outline'>Client Code</button>
             </a>
             <a
               className='justify-self-end'
@@ -58,7 +58,7 @@ const ProjectSection = () => {
               target='_blank'
               rel='noreferrer'
             >
-              Server Code
+              <button class='btn btn-outline'>Server Code</button>
             </a>
           </div>
         </article>
@@ -83,13 +83,13 @@ const ProjectSection = () => {
               </h1>
             </div>
           </div>
-          <div className='grid grid-cols-3 items-center justify-between mt-auto font-bold'>
+          <div className='flex items-center justify-between mt-auto font-bold'>
             <a
               href='https://fruit-mama-client.web.app/'
               target='_blank'
               rel='noreferrer'
             >
-              Live Link
+              <button class='btn btn-outline'>Live Link</button>
             </a>
             <a
               className='justify-self-center'
@@ -97,7 +97,7 @@ const ProjectSection = () => {
               target='_blank'
               rel='noreferrer'
             >
-              Client Code
+              <button class='btn btn-outline'>Client Code</button>
             </a>
             <a
               className='justify-self-end'
@@ -105,7 +105,7 @@ const ProjectSection = () => {
               target='_blank'
               rel='noreferrer'
             >
-              Server Code
+              <button class='btn btn-outline'>Server Code</button>
             </a>
           </div>
         </article>
@@ -131,13 +131,13 @@ const ProjectSection = () => {
               </h1>
             </div>
           </div>
-          <div className='grid grid-cols-2 items-center justify-between mt-auto font-bold'>
+          <div className='flex items-center justify-between mt-auto font-bold'>
             <a
               href='https://doctor-smile-app-9f0d2.web.app/'
               target='_blank'
               rel='noreferrer'
             >
-              Live Link
+              <button class='btn btn-outline'>Live Link</button>
             </a>
             <a
               className='justify-self-end'
@@ -145,7 +145,7 @@ const ProjectSection = () => {
               target='_blank'
               rel='noreferrer'
             >
-              Client Code
+              <button class='btn btn-outline'>Client Code</button>
             </a>
           </div>
         </article>
