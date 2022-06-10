@@ -15,7 +15,7 @@ const ProjectSection = () => {
       </div>
 
       <div className='container mx-auto md:grid md:grid-cols-2 md:gap-8 lg:grid-cols-3'>
-        <article className='relative bg-[#FCEEC5] rounded-md mb-4 md:mb-0 p-4 flex flex-col gap-y-4'>
+        <article className='relative bg-orange-100 rounded-md mb-4 md:mb-0 p-4 flex flex-col gap-y-4'>
           <div>
             <img src={img1} alt='single project' className='project-img' />
             <div className='project-info'>
@@ -63,7 +63,7 @@ const ProjectSection = () => {
           </div>
         </article>
 
-        <article className='relative bg-[#FCEEC5] rounded-md mb-4 md:mb-0 p-4 flex flex-col gap-y-4'>
+        <article className='relative bg-orange-100 rounded-md mb-4 md:mb-0 p-4 flex flex-col gap-y-4'>
           <div>
             <img src={img2} alt='single project' className='project-img' />
             <div className='project-info'>
@@ -110,7 +110,7 @@ const ProjectSection = () => {
           </div>
         </article>
 
-        <article className='relative bg-[#FCEEC5] rounded-md mb-4 md:mb-0 p-4 flex flex-col gap-y-4'>
+        <article className='relative bg-orange-100 rounded-md mb-4 md:mb-0 p-4 flex flex-col gap-y-4'>
           <div>
             <img src={img3} alt='single project' className='project-img' />
             <div className='project-info'>
